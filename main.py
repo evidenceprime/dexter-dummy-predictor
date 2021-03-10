@@ -1,5 +1,6 @@
 import spacy
 import re
+import pandas as pd
 
 from typing import List, Optional
 from fastapi import FastAPI, status
@@ -22,10 +23,14 @@ class Mention(BaseModel):
     words: List[str]
 
 
+class Item(BaseModel):
+    ids: List[int]
+    text: str
+
+
 class Equivalence(BaseModel):
     id: int
-    display_text: str
-    items: List[int]
+    items: List[Item]
 
 
 class PredictorRequest(BaseModel):
@@ -77,15 +82,29 @@ async def predict(request: PredictorRequest):
             }
         )
 
-    # Group mentions by `lemma_stem_text` and `tag`
-    grouped_ids = defaultdict(list)
-    for mention in mentions:
-        if mention["tag"]:  # Take only relevant tags
-            grouped_ids[(mention['lemma_stem_text'], mention['tag'])].append(mention["id"])
+    # Group mentions into equivalence groups
+    df = pd.DataFrame(mentions)
+    df = df.query("tag.notna()")  # Take only relevant tags
 
-    equivalences = [
-        {"id": i, "items": list(ids), "display_text": mentions[list(ids)[0]]['text']}
-        for i, (k, ids) in enumerate(grouped_ids.items())
-    ]
+    # First level of aggregation refers to almost the entity with text noise
+    # E.g. "mice", "mice.", "Mice" => "mice"
+    df = (
+        df.groupby(["tag", "lemma_stem_text", "text"], as_index=False)
+        .agg({"id": list})
+        .rename(columns={"id": "ids"})
+    )
+
+    df["item"] = df[["text", "ids"]].to_dict('records')
+
+    # Second level of aggregation refers to same entity, but expressed as plural form
+    # E.g. "mouse", "mice" => "mice"
+    df = (
+        df.groupby(["tag", "lemma_stem_text"], as_index=False)
+        .agg({"item": list})
+        .rename(columns={"item": "items"})
+    )
+
+    df["id"] = range(len(df))
+    equivalences = df[['id', 'items']].to_dict('records')
 
     return {"mentions": mentions, "equivalences": equivalences}
