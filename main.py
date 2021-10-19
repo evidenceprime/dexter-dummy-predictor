@@ -30,6 +30,7 @@ class Item(BaseModel):
 
 class Equivalence(BaseModel):
     id: int
+    tag: str
     items: List[Item]
 
 
@@ -66,6 +67,9 @@ async def predict(request: PredictorRequest):
     tokens = nlp(request.text)
     tokens_grouped = groupby(tokens, key=lambda token: token.ent_type_)
     for i, (ent, ent_group) in enumerate(tokens_grouped):
+        if not ent:
+            continue
+
         group_values = [(elem.text, elem.lemma_, elem.idx) for elem in ent_group]
         words, lemmas, offsets = zip(*group_values)
 
@@ -74,7 +78,7 @@ async def predict(request: PredictorRequest):
         mentions.append(
             {
                 "id": i,
-                "tag": ent if ent else None,
+                "tag": ent,
                 "offsets": offsets,
                 "words": words,
                 "text": " ".join(words),
@@ -84,7 +88,6 @@ async def predict(request: PredictorRequest):
 
     # Group mentions into equivalence groups
     df = pd.DataFrame(mentions)
-    df = df.query("tag.notna()")  # Take only relevant tags
 
     # First level of aggregation refers to almost the entity with text noise
     # E.g. "mice", "mice.", "Mice" => "mice"
@@ -94,7 +97,7 @@ async def predict(request: PredictorRequest):
         .rename(columns={"id": "ids"})
     )
 
-    df["item"] = df[["text", "ids"]].to_dict('records')
+    df["item"] = df[["text", "ids"]].to_dict("records")
 
     # Second level of aggregation refers to same entity, but expressed as plural form
     # E.g. "mouse", "mice" => "mice"
@@ -105,6 +108,6 @@ async def predict(request: PredictorRequest):
     )
 
     df["id"] = range(len(df))
-    equivalences = df[['id', 'items']].to_dict('records')
+    equivalences = df[["id", "items", "tag"]].to_dict("records")
 
     return {"mentions": mentions, "equivalences": equivalences}
