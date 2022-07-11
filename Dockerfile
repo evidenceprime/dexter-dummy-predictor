@@ -11,7 +11,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 
 # Turns off buffering for easier container logging
 ENV PYTHONUNBUFFERED=1
-doc
+
 COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
 RUN python -m spacy download en_core_web_sm
