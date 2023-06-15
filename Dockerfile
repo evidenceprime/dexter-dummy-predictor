@@ -1,4 +1,4 @@
-FROM python:3.8.16-slim-bullseye
+FROM python:3.8.17-slim-bullseye
 
 RUN apt-get update && apt-get upgrade -y
 
