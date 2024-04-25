@@ -1,6 +1,7 @@
 FROM python:3.8.17-slim-bullseye
 
 RUN apt-get update && apt-get upgrade -y
+RUN apt-get install gcc g++ -y
 
 ARG UID=46012
 ARG USER=predictor
