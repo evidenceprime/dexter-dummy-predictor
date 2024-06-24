@@ -1,7 +1,7 @@
-FROM python:3.8.17-slim-bullseye
+FROM python:3.8.19-slim-bookworm
 
 RUN apt-get update && apt-get upgrade -y
-RUN apt-get install gcc g++ -y
+RUN pip install --upgrade pip
 
 ARG UID=46012
 ARG USER=predictor
@@ -14,17 +14,20 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
 COPY requirements.txt .
-RUN python -m pip install -r requirements.txt
+
+RUN apt-get install -y gcc g++ && \
+    python -m pip install -r requirements.txt &&  \
+    apt-get remove -y gcc g++ && \
+    apt-get autoremove -y && \
+    rm -rf /var/lib/apt/lists/*
+
 RUN python -m spacy download en_core_web_sm
 
 WORKDIR /app
-COPY . /app
-
-USER root
 RUN chown -R $USER:$USER /app/
-USER $USER
+COPY --chown=$USER:$user . /app
 
-WORKDIR /app
+USER $USER
 
 EXPOSE 8000
 CMD ["uvicorn", "main:app", "--reload", "--host", "0.0.0.0", "--port", "8000"]
