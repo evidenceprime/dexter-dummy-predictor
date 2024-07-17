@@ -25,7 +25,7 @@ RUN python -m spacy download en_core_web_sm
 
 WORKDIR /app
 RUN chown -R $USER:$USER /app/
-COPY --chown=$USER:$user . /app
+COPY --chown=$USER:$USER . /app
 
 USER $USER
 
