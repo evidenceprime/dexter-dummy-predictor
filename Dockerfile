@@ -23,11 +23,10 @@ RUN apt-get install -y gcc g++ && \
 
 RUN python -m spacy download en_core_web_sm
 
-WORKDIR /app
-RUN chown -R $USER:$USER /app/
-COPY --chown=$USER:$user . /app
-
 USER $USER
+
+WORKDIR /app
+COPY --chown=$USER:$USER . /app
 
 EXPOSE 8000
 CMD ["uvicorn", "main:app", "--reload", "--host", "0.0.0.0", "--port", "8000"]
