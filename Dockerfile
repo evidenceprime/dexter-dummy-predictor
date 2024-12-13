@@ -1,4 +1,4 @@
-FROM python:3.8.19-slim-bookworm
+FROM python:3.11.11-slim-bookworm
 
 RUN apt-get update && apt-get upgrade -y
 RUN pip install --upgrade pip
@@ -20,8 +20,6 @@ RUN apt-get install -y gcc g++ && \
     apt-get remove -y gcc g++ && \
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/*
-
-RUN python -m spacy download en_core_web_sm
 
 USER $USER
 
