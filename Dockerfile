@@ -13,10 +13,10 @@ ENV PYTHONDONTWRITEBYTECODE=1
 # Turns off buffering for easier container logging
 ENV PYTHONUNBUFFERED=1
 
-COPY requirements.txt .
+COPY requirements.txt constraints.txt .
 
 RUN apt-get install -y gcc g++ && \
-    python -m pip install -r requirements.txt &&  \
+    PIP_CONSTRAINT=constraints.txt python -m pip install -r requirements.txt &&  \
     apt-get remove -y gcc g++ && \
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/*
