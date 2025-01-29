@@ -3,7 +3,7 @@ uvicorn==0.34.0
 pydantic==1.10.19
 spacy==3.8.3
 nltk==3.9.1
-pandas==1.5.3
+pandas==2.2.3
 setuptools==75.7.0
 starlette==0.41.3
 en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
