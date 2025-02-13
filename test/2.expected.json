@@ -1,0 +1,39 @@
+{
+  "mentions": [
+    {
+      "id": 0,
+      "tag": "PERSON",
+      "offsets": [
+        0
+      ],
+      "words": [
+        "Lorem"
+      ]
+    },
+    {
+      "id": 2,
+      "tag": "PERSON",
+      "offsets": [
+        160
+      ],
+      "words": [
+        "Lorem"
+      ]
+    }
+  ],
+  "equivalences": [
+    {
+      "id": 0,
+      "tag": "PERSON",
+      "items": [
+        {
+          "ids": [
+            0,
+            2
+          ],
+          "text": "Lorem"
+        }
+      ]
+    }
+  ]
+}

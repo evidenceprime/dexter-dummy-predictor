@@ -1,0 +1,1505 @@
+{
+  "mentions": [
+    {
+      "id": 1,
+      "tag": "ORG",
+      "offsets": [
+        72
+      ],
+      "words": [
+        "Fluka"
+      ]
+    },
+    {
+      "id": 3,
+      "tag": "CARDINAL",
+      "offsets": [
+        131
+      ],
+      "words": [
+        "7.4"
+      ]
+    },
+    {
+      "id": 5,
+      "tag": "ORG",
+      "offsets": [
+        199,
+        202,
+        203,
+        208
+      ],
+      "words": [
+        "CrV",
+        "-",
+        "BT]2-",
+        "\n "
+      ]
+    },
+    {
+      "id": 7,
+      "tag": "ORG",
+      "offsets": [
+        211,
+        214,
+        215
+      ],
+      "words": [
+        "CrV",
+        "-",
+        "BT]2-"
+      ]
+    },
+    {
+      "id": 9,
+      "tag": "CARDINAL",
+      "offsets": [
+        386
+      ],
+      "words": [
+        "13"
+      ]
+    },
+    {
+      "id": 11,
+      "tag": "CARDINAL",
+      "offsets": [
+        455
+      ],
+      "words": [
+        "10"
+      ]
+    },
+    {
+      "id": 13,
+      "tag": "DATE",
+      "offsets": [
+        486,
+        488,
+        489,
+        492,
+        493
+      ],
+      "words": [
+        "60",
+        "-",
+        "day",
+        "-",
+        "old"
+      ]
+    },
+    {
+      "id": 15,
+      "tag": "ORG",
+      "offsets": [
+        502,
+        505,
+        506
+      ],
+      "words": [
+        "ICR",
+        "-",
+        "CD1"
+      ]
+    },
+    {
+      "id": 17,
+      "tag": "GPE",
+      "offsets": [
+        516,
+        523,
+        534,
+        542
+      ],
+      "words": [
+        "Harlan",
+        "Interfauna",
+        "Iberica",
+        "SA"
+      ]
+    },
+    {
+      "id": 19,
+      "tag": "GPE",
+      "offsets": [
+        546
+      ],
+      "words": [
+        "Barcelone"
+      ]
+    },
+    {
+      "id": 21,
+      "tag": "GPE",
+      "offsets": [
+        557
+      ],
+      "words": [
+        "Spain"
+      ]
+    },
+    {
+      "id": 23,
+      "tag": "CARDINAL",
+      "offsets": [
+        609
+      ],
+      "words": [
+        "22"
+      ]
+    },
+    {
+      "id": 25,
+      "tag": "PERCENT",
+      "offsets": [
+        638,
+        643
+      ],
+      "words": [
+        "40–60",
+        "%"
+      ]
+    },
+    {
+      "id": 27,
+      "tag": "CARDINAL",
+      "offsets": [
+        671
+      ],
+      "words": [
+        "12"
+      ]
+    },
+    {
+      "id": 29,
+      "tag": "DATE",
+      "offsets": [
+        769,
+        773
+      ],
+      "words": [
+        "one",
+        "week"
+      ]
+    },
+    {
+      "id": 31,
+      "tag": "CARDINAL",
+      "offsets": [
+        821
+      ],
+      "words": [
+        "one"
+      ]
+    },
+    {
+      "id": 33,
+      "tag": "DATE",
+      "offsets": [
+        867
+      ],
+      "words": [
+        "daily"
+      ]
+    },
+    {
+      "id": 35,
+      "tag": "CARDINAL",
+      "offsets": [
+        888
+      ],
+      "words": [
+        "8"
+      ]
+    },
+    {
+      "id": 37,
+      "tag": "GPE",
+      "offsets": [
+        898
+      ],
+      "words": [
+        "Cr"
+      ]
+    },
+    {
+      "id": 39,
+      "tag": "DATE",
+      "offsets": [
+        912,
+        914
+      ],
+      "words": [
+        "5",
+        "days"
+      ]
+    },
+    {
+      "id": 41,
+      "tag": "CARDINAL",
+      "offsets": [
+        920
+      ],
+      "words": [
+        "15"
+      ]
+    },
+    {
+      "id": 43,
+      "tag": "PERCENT",
+      "offsets": [
+        993,
+        997,
+        1000
+      ],
+      "words": [
+        "0.5",
+        "mL",
+        "BT"
+      ]
+    },
+    {
+      "id": 45,
+      "tag": "DATE",
+      "offsets": [
+        1008,
+        1012
+      ],
+      "words": [
+        "day",
+        "six"
+      ]
+    },
+    {
+      "id": 47,
+      "tag": "GPE",
+      "offsets": [
+        1058
+      ],
+      "words": [
+        "anaesthesia"
+      ]
+    },
+    {
+      "id": 49,
+      "tag": "ORG",
+      "offsets": [
+        1243
+      ],
+      "words": [
+        "CEE"
+      ]
+    },
+    {
+      "id": 51,
+      "tag": "PERCENT",
+      "offsets": [
+        1397,
+        1400
+      ],
+      "words": [
+        "2.5",
+        "%"
+      ]
+    },
+    {
+      "id": 53,
+      "tag": "TIME",
+      "offsets": [
+        1421,
+        1423
+      ],
+      "words": [
+        "2",
+        "hours"
+      ]
+    },
+    {
+      "id": 55,
+      "tag": "LOC",
+      "offsets": [
+        1563,
+        1573
+      ],
+      "words": [
+        "Supernova",
+        "Reichert"
+      ]
+    },
+    {
+      "id": 57,
+      "tag": "ORG",
+      "offsets": [
+        1851
+      ],
+      "words": [
+        "Hitachi"
+      ]
+    },
+    {
+      "id": 59,
+      "tag": "MONEY",
+      "offsets": [
+        1882,
+        1886,
+        1889,
+        1891
+      ],
+      "words": [
+        "100",
+        "kV.",
+        "\n ",
+        "Sperm"
+      ]
+    },
+    {
+      "id": 61,
+      "tag": "NORP",
+      "offsets": [
+        1943
+      ],
+      "words": [
+        "Petri"
+      ]
+    },
+    {
+      "id": 63,
+      "tag": "PERSON",
+      "offsets": [
+        1965,
+        1974,
+        1980
+      ],
+      "words": [
+        "Modified",
+        "Tyrode",
+        "'s"
+      ]
+    },
+    {
+      "id": 65,
+      "tag": "GPE",
+      "offsets": [
+        2012
+      ],
+      "words": [
+        "Fraser"
+      ]
+    },
+    {
+      "id": 67,
+      "tag": "CARDINAL",
+      "offsets": [
+        2020
+      ],
+      "words": [
+        "25"
+      ]
+    },
+    {
+      "id": 69,
+      "tag": "PERSON",
+      "offsets": [
+        2120,
+        2128
+      ],
+      "words": [
+        "Parafilm",
+        "®"
+      ]
+    },
+    {
+      "id": 71,
+      "tag": "CARDINAL",
+      "offsets": [
+        2148
+      ],
+      "words": [
+        "30"
+      ]
+    },
+    {
+      "id": 73,
+      "tag": "CARDINAL",
+      "offsets": [
+        2158
+      ],
+      "words": [
+        "35"
+      ]
+    },
+    {
+      "id": 75,
+      "tag": "ORG",
+      "offsets": [
+        2246
+      ],
+      "words": [
+        "micropipette"
+      ]
+    },
+    {
+      "id": 77,
+      "tag": "CARDINAL",
+      "offsets": [
+        2268
+      ],
+      "words": [
+        "20"
+      ]
+    },
+    {
+      "id": 79,
+      "tag": "CARDINAL",
+      "offsets": [
+        2456,
+        2459,
+        2465
+      ],
+      "words": [
+        "at",
+        "least",
+        "100"
+      ]
+    },
+    {
+      "id": 81,
+      "tag": "CARDINAL",
+      "offsets": [
+        2682
+      ],
+      "words": [
+        "5"
+      ]
+    },
+    {
+      "id": 83,
+      "tag": "QUANTITY",
+      "offsets": [
+        2691,
+        2696
+      ],
+      "words": [
+        "1000",
+        "g."
+      ]
+    },
+    {
+      "id": 85,
+      "tag": "CARDINAL",
+      "offsets": [
+        2754
+      ],
+      "words": [
+        "20"
+      ]
+    },
+    {
+      "id": 87,
+      "tag": "CARDINAL",
+      "offsets": [
+        2787
+      ],
+      "words": [
+        "1:1"
+      ]
+    },
+    {
+      "id": 89,
+      "tag": "ORG",
+      "offsets": [
+        2905,
+        2914,
+        2923
+      ],
+      "words": [
+        "Neubauer",
+        "Improved",
+        "Chamber"
+      ]
+    },
+    {
+      "id": 91,
+      "tag": "PERSON",
+      "offsets": [
+        3001
+      ],
+      "words": [
+        "Lu"
+      ]
+    },
+    {
+      "id": 93,
+      "tag": "CARDINAL",
+      "offsets": [
+        3014
+      ],
+      "words": [
+        "26"
+      ]
+    },
+    {
+      "id": 95,
+      "tag": "PERCENT",
+      "offsets": [
+        3043,
+        3044
+      ],
+      "words": [
+        "5",
+        "%"
+      ]
+    },
+    {
+      "id": 97,
+      "tag": "ORG",
+      "offsets": [
+        3062
+      ],
+      "words": [
+        "PBS"
+      ]
+    },
+    {
+      "id": 99,
+      "tag": "CARDINAL",
+      "offsets": [
+        3070
+      ],
+      "words": [
+        "30"
+      ]
+    },
+    {
+      "id": 101,
+      "tag": "CARDINAL",
+      "offsets": [
+        3080
+      ],
+      "words": [
+        "23"
+      ]
+    },
+    {
+      "id": 103,
+      "tag": "CARDINAL",
+      "offsets": [
+        3134
+      ],
+      "words": [
+        "1000"
+      ]
+    },
+    {
+      "id": 105,
+      "tag": "CARDINAL",
+      "offsets": [
+        3145
+      ],
+      "words": [
+        "5"
+      ]
+    },
+    {
+      "id": 107,
+      "tag": "CARDINAL",
+      "offsets": [
+        3180
+      ],
+      "words": [
+        "500"
+      ]
+    },
+    {
+      "id": 109,
+      "tag": "CARDINAL",
+      "offsets": [
+        3213
+      ],
+      "words": [
+        "9.0"
+      ]
+    },
+    {
+      "id": 111,
+      "tag": "CARDINAL",
+      "offsets": [
+        3279
+      ],
+      "words": [
+        "100"
+      ]
+    },
+    {
+      "id": 113,
+      "tag": "CARDINAL",
+      "offsets": [
+        3316
+      ],
+      "words": [
+        "20"
+      ]
+    },
+    {
+      "id": 115,
+      "tag": "CARDINAL",
+      "offsets": [
+        3389
+      ],
+      "words": [
+        "2"
+      ]
+    },
+    {
+      "id": 117,
+      "tag": "CARDINAL",
+      "offsets": [
+        3398
+      ],
+      "words": [
+        "23"
+      ]
+    },
+    {
+      "id": 119,
+      "tag": "CARDINAL",
+      "offsets": [
+        3408
+      ],
+      "words": [
+        "0.22"
+      ]
+    },
+    {
+      "id": 120,
+      "tag": "PERSON",
+      "offsets": [
+        3413
+      ],
+      "words": [
+        "Coomassie"
+      ]
+    },
+    {
+      "id": 122,
+      "tag": "PERCENT",
+      "offsets": [
+        3436,
+        3438
+      ],
+      "words": [
+        "50",
+        "%"
+      ]
+    },
+    {
+      "id": 124,
+      "tag": "ORG",
+      "offsets": [
+        3809,
+        3813,
+        3817
+      ],
+      "words": [
+        "Fig",
+        "1B.",
+        "Transgenerational"
+      ]
+    },
+    {
+      "id": 126,
+      "tag": "PERCENT",
+      "offsets": [
+        3861,
+        3869,
+        3871
+      ],
+      "words": [
+        "roughly",
+        "50",
+        "%"
+      ]
+    },
+    {
+      "id": 128,
+      "tag": "PRODUCT",
+      "offsets": [
+        3880
+      ],
+      "words": [
+        "F3"
+      ]
+    },
+    {
+      "id": 130,
+      "tag": "PRODUCT",
+      "offsets": [
+        3910,
+        3916,
+        3918
+      ],
+      "words": [
+        "Table",
+        "1",
+        "and"
+      ]
+    },
+    {
+      "id": 131,
+      "tag": "ORG",
+      "offsets": [
+        3922,
+        3925
+      ],
+      "words": [
+        "S3",
+        "Table"
+      ]
+    }
+  ],
+  "equivalences": [
+    {
+      "id": 0,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            119
+          ],
+          "text": "0.22"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            11
+          ],
+          "text": "10"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            111
+          ],
+          "text": "100"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            103
+          ],
+          "text": "1000"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            27
+          ],
+          "text": "12"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            9
+          ],
+          "text": "13"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            41
+          ],
+          "text": "15"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            87
+          ],
+          "text": "1:1"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            115
+          ],
+          "text": "2"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            77,
+            85,
+            113
+          ],
+          "text": "20"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            23
+          ],
+          "text": "22"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            101,
+            117
+          ],
+          "text": "23"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            67
+          ],
+          "text": "25"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            93
+          ],
+          "text": "26"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            71,
+            99
+          ],
+          "text": "30"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            73
+          ],
+          "text": "35"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            81,
+            105
+          ],
+          "text": "5"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            107
+          ],
+          "text": "500"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            3
+          ],
+          "text": "7.4"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            35
+          ],
+          "text": "8"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            109
+          ],
+          "text": "9.0"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            79
+          ],
+          "text": "at least 100"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            31
+          ],
+          "text": "one"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "tag": "DATE",
+      "items": [
+        {
+          "ids": [
+            39
+          ],
+          "text": "5 days"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "tag": "DATE",
+      "items": [
+        {
+          "ids": [
+            13
+          ],
+          "text": "60 - day - old"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "tag": "DATE",
+      "items": [
+        {
+          "ids": [
+            33
+          ],
+          "text": "daily"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "tag": "DATE",
+      "items": [
+        {
+          "ids": [
+            45
+          ],
+          "text": "day six"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "tag": "DATE",
+      "items": [
+        {
+          "ids": [
+            29
+          ],
+          "text": "one week"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "tag": "GPE",
+      "items": [
+        {
+          "ids": [
+            47
+          ],
+          "text": "anaesthesia"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "tag": "GPE",
+      "items": [
+        {
+          "ids": [
+            19
+          ],
+          "text": "Barcelone"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "tag": "GPE",
+      "items": [
+        {
+          "ids": [
+            37
+          ],
+          "text": "Cr"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "tag": "GPE",
+      "items": [
+        {
+          "ids": [
+            65
+          ],
+          "text": "Fraser"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "tag": "GPE",
+      "items": [
+        {
+          "ids": [
+            17
+          ],
+          "text": "Harlan Interfauna Iberica SA"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "tag": "GPE",
+      "items": [
+        {
+          "ids": [
+            21
+          ],
+          "text": "Spain"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "tag": "LOC",
+      "items": [
+        {
+          "ids": [
+            55
+          ],
+          "text": "Supernova Reichert"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "tag": "MONEY",
+      "items": [
+        {
+          "ids": [
+            59
+          ],
+          "text": "100 kV. \n  Sperm"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "tag": "NORP",
+      "items": [
+        {
+          "ids": [
+            61
+          ],
+          "text": "Petri"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "tag": "ORG",
+      "items": [
+        {
+          "ids": [
+            49
+          ],
+          "text": "CEE"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "tag": "ORG",
+      "items": [
+        {
+          "ids": [
+            7
+          ],
+          "text": "CrV - BT]2-"
+        },
+        {
+          "ids": [
+            5
+          ],
+          "text": "CrV - BT]2- \n "
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "tag": "ORG",
+      "items": [
+        {
+          "ids": [
+            124
+          ],
+          "text": "Fig 1B. Transgenerational"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "tag": "ORG",
+      "items": [
+        {
+          "ids": [
+            1
+          ],
+          "text": "Fluka"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "tag": "ORG",
+      "items": [
+        {
+          "ids": [
+            57
+          ],
+          "text": "Hitachi"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "tag": "ORG",
+      "items": [
+        {
+          "ids": [
+            15
+          ],
+          "text": "ICR - CD1"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "tag": "ORG",
+      "items": [
+        {
+          "ids": [
+            75
+          ],
+          "text": "micropipette"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "tag": "ORG",
+      "items": [
+        {
+          "ids": [
+            89
+          ],
+          "text": "Neubauer Improved Chamber"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "tag": "ORG",
+      "items": [
+        {
+          "ids": [
+            97
+          ],
+          "text": "PBS"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "tag": "ORG",
+      "items": [
+        {
+          "ids": [
+            131
+          ],
+          "text": "S3 Table"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "tag": "PERCENT",
+      "items": [
+        {
+          "ids": [
+            43
+          ],
+          "text": "0.5 mL BT"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "tag": "PERCENT",
+      "items": [
+        {
+          "ids": [
+            51
+          ],
+          "text": "2.5 %"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "tag": "PERCENT",
+      "items": [
+        {
+          "ids": [
+            25
+          ],
+          "text": "40–60 %"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "tag": "PERCENT",
+      "items": [
+        {
+          "ids": [
+            95
+          ],
+          "text": "5 %"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "tag": "PERCENT",
+      "items": [
+        {
+          "ids": [
+            122
+          ],
+          "text": "50 %"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "tag": "PERCENT",
+      "items": [
+        {
+          "ids": [
+            126
+          ],
+          "text": "roughly 50 %"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "tag": "PERSON",
+      "items": [
+        {
+          "ids": [
+            120
+          ],
+          "text": "Coomassie"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "tag": "PERSON",
+      "items": [
+        {
+          "ids": [
+            91
+          ],
+          "text": "Lu"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "tag": "PERSON",
+      "items": [
+        {
+          "ids": [
+            63
+          ],
+          "text": "Modified Tyrode 's"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "tag": "PERSON",
+      "items": [
+        {
+          "ids": [
+            69
+          ],
+          "text": "Parafilm ®"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "tag": "PRODUCT",
+      "items": [
+        {
+          "ids": [
+            128
+          ],
+          "text": "F3"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "tag": "PRODUCT",
+      "items": [
+        {
+          "ids": [
+            130
+          ],
+          "text": "Table 1 and"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "tag": "QUANTITY",
+      "items": [
+        {
+          "ids": [
+            83
+          ],
+          "text": "1000 g."
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "tag": "TIME",
+      "items": [
+        {
+          "ids": [
+            53
+          ],
+          "text": "2 hours"
+        }
+      ]
+    }
+  ]
+}

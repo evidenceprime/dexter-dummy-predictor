@@ -1,0 +1,144 @@
+{
+  "mentions": [
+    {
+      "id": 1,
+      "tag": "ORG",
+      "offsets": [
+        57
+      ],
+      "words": [
+        "LOD"
+      ]
+    },
+    {
+      "id": 3,
+      "tag": "CARDINAL",
+      "offsets": [
+        65
+      ],
+      "words": [
+        "0.1"
+      ]
+    },
+    {
+      "id": 5,
+      "tag": "ORG",
+      "offsets": [
+        76,
+        82
+      ],
+      "words": [
+        "Table",
+        "S2"
+      ]
+    },
+    {
+      "id": 7,
+      "tag": "DATE",
+      "offsets": [
+        127
+      ],
+      "words": [
+        "1990"
+      ]
+    },
+    {
+      "id": 9,
+      "tag": "ORG",
+      "offsets": [
+        154
+      ],
+      "words": [
+        "PFOA"
+      ]
+    },
+    {
+      "id": 11,
+      "tag": "ORG",
+      "offsets": [
+        274,
+        276,
+        277
+      ],
+      "words": [
+        "Sb",
+        "-",
+        "PFOA"
+      ]
+    }
+  ],
+  "equivalences": [
+    {
+      "id": 0,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            3
+          ],
+          "text": "0.1"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "tag": "DATE",
+      "items": [
+        {
+          "ids": [
+            7
+          ],
+          "text": "1990"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "tag": "ORG",
+      "items": [
+        {
+          "ids": [
+            1
+          ],
+          "text": "LOD"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "tag": "ORG",
+      "items": [
+        {
+          "ids": [
+            9
+          ],
+          "text": "PFOA"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "tag": "ORG",
+      "items": [
+        {
+          "ids": [
+            11
+          ],
+          "text": "Sb - PFOA"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "tag": "ORG",
+      "items": [
+        {
+          "ids": [
+            5
+          ],
+          "text": "Table S2"
+        }
+      ]
+    }
+  ]
+}

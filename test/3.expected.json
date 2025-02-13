@@ -1,0 +1,259 @@
+{
+  "mentions": [
+    {
+      "id": 1,
+      "tag": "CARDINAL",
+      "offsets": [
+        105
+      ],
+      "words": [
+        "1.2"
+      ]
+    },
+    {
+      "id": 3,
+      "tag": "CARDINAL",
+      "offsets": [
+        112
+      ],
+      "words": [
+        "1.8"
+      ]
+    },
+    {
+      "id": 5,
+      "tag": "CARDINAL",
+      "offsets": [
+        120
+      ],
+      "words": [
+        "2.6–2.8"
+      ]
+    },
+    {
+      "id": 7,
+      "tag": "CARDINAL",
+      "offsets": [
+        293
+      ],
+      "words": [
+        "0.7–1.4"
+      ]
+    },
+    {
+      "id": 9,
+      "tag": "CARDINAL",
+      "offsets": [
+        403
+      ],
+      "words": [
+        "2"
+      ]
+    },
+    {
+      "id": 11,
+      "tag": "CARDINAL",
+      "offsets": [
+        408
+      ],
+      "words": [
+        "4"
+      ]
+    },
+    {
+      "id": 13,
+      "tag": "CARDINAL",
+      "offsets": [
+        429
+      ],
+      "words": [
+        "three"
+      ]
+    },
+    {
+      "id": 15,
+      "tag": "CARDINAL",
+      "offsets": [
+        460
+      ],
+      "words": [
+        "1"
+      ]
+    },
+    {
+      "id": 17,
+      "tag": "CARDINAL",
+      "offsets": [
+        516
+      ],
+      "words": [
+        "1"
+      ]
+    },
+    {
+      "id": 19,
+      "tag": "PERSON",
+      "offsets": [
+        608
+      ],
+      "words": [
+        "placebo"
+      ]
+    },
+    {
+      "id": 21,
+      "tag": "MONEY",
+      "offsets": [
+        621
+      ],
+      "words": [
+        "0.002"
+      ]
+    },
+    {
+      "id": 23,
+      "tag": "CARDINAL",
+      "offsets": [
+        672
+      ],
+      "words": [
+        "1.8"
+      ]
+    },
+    {
+      "id": 25,
+      "tag": "CARDINAL",
+      "offsets": [
+        679
+      ],
+      "words": [
+        "1.2"
+      ]
+    }
+  ],
+  "equivalences": [
+    {
+      "id": 0,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            7
+          ],
+          "text": "0.7–1.4"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            15,
+            17
+          ],
+          "text": "1"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            1,
+            25
+          ],
+          "text": "1.2"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            3,
+            23
+          ],
+          "text": "1.8"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            9
+          ],
+          "text": "2"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            5
+          ],
+          "text": "2.6–2.8"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            11
+          ],
+          "text": "4"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "tag": "CARDINAL",
+      "items": [
+        {
+          "ids": [
+            13
+          ],
+          "text": "three"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "tag": "MONEY",
+      "items": [
+        {
+          "ids": [
+            21
+          ],
+          "text": "0.002"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "tag": "PERSON",
+      "items": [
+        {
+          "ids": [
+            19
+          ],
+          "text": "placebo"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "mentions": [
+    {
+      "id": 1,
+      "tag": "PERCENT",
+      "offsets": [
+        73,
+        76
+      ],
+      "words": [
+        "2.5",
+        "%"
+      ]
+    },
+    {
+      "id": 3,
+      "tag": "TIME",
+      "offsets": [
+        97,
+        99
+      ],
+      "words": [
+        "2",
+        "hours"
+      ]
+    }
+  ],
+  "equivalences": [
+    {
+      "id": 0,
+      "tag": "PERCENT",
+      "items": [
+        {
+          "ids": [
+            1
+          ],
+          "text": "2.5 %"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "tag": "TIME",
+      "items": [
+        {
+          "ids": [
+            3
+          ],
+          "text": "2 hours"
+        }
+      ]
+    }
+  ]
+}
