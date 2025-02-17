@@ -55,6 +55,7 @@ jobs:
           outputs: type=image,"name=${{ env.IMAGE }}",push-by-digest=true,name-canonical=true,push=true
 
       - name: Export digest
+        if: github.ref == 'refs/heads/master'
         run: |
           mkdir -p ${{ runner.temp }}/digests
           digest="${{ steps.build.outputs.digest }}"
