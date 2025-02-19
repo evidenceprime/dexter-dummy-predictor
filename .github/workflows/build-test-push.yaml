@@ -44,7 +44,7 @@ jobs:
       
       - name: Test
         if: ${{ github.event_name == 'pull_request' }}
-        run: docker run --rm -v $(pwd)/test:/app/test -it ${{ env.IMAGE }}:${{ github.sha }} python3 -m pytest test
+        run: docker run --rm -v $(pwd)/test:/app/test ${{ env.IMAGE }}:${{ github.sha }} python3 -m pytest test
 
       - name: Build and push by digest
         if: github.ref == 'refs/heads/master'
