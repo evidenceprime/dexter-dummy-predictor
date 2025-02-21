@@ -23,7 +23,12 @@ dependencies = [
     # https://github.com/explosion/cython-blis/issues/116#issuecomment-2588656015
     "blis (==1.1.0)",
     "thinc (==8.3.3)"
+]
 
+[build-system]
+requires = [
+    "blis==1.1.0",
+    "thinc==8.3.3"
 ]
 
 [tool.poetry]
