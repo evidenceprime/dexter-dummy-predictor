@@ -25,6 +25,9 @@ dependencies = [
     "thinc (==8.3.3)"
 ]
 
+[tool.poetry.dependencies]
+blis = "==1.1.0"
+
 [build-system]
 requires = [
     "blis==1.1.0",
