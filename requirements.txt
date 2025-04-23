@@ -4,7 +4,7 @@ pydantic==1.10.19
 spacy==3.8.3
 nltk==3.9.1
 pandas==2.2.3
-setuptools==78.1.0
+setuptools==79.0.1
 starlette==0.45.3
 en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
 tqdm==4.67.1
