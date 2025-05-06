@@ -1,0 +1,49 @@
+name: Trivy
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 1 * * 0'
+
+jobs:
+  trivy:
+    name: Trivy
+    runs-on: ubuntu-24.04
+    steps:
+
+      - name: Run Trivy scanner for JSON output
+        uses: aquasecurity/trivy-action@6c175e9c4083a92bbca2f9724c8a5e33bc2d97a5 # 0.30.0
+        with:
+          image-ref: 'docker.evidenceprime.com/dexter-dummy-predictor:${{ github.sha }}'
+          hide-progress: true
+          format: json
+          output: trivy.json
+          scan-type: 'image'
+        env:
+          TRIVY_DISABLE_VEX_NOTICE: true
+          TRIVY_USERNAME: ${{ secrets.DOCKER_PUBLIC_LOGIN }}
+          TRIVY_PASSWORD: ${{ secrets.DOCKER_PUBLIC_PASSWORD }}
+
+      - name: Push Trivy Output to Defect Dojo
+        run: |
+          if [[ -s trivy.json ]]; then
+            RESPONSE_CODE=$(curl -X POST -o /dev/null -s -w "%{http_code}\n" \
+              -H "Content-Type: multipart/form-data" \
+              -H "Authorization: Token ${{ secrets.DEFECTDOJO_TEST_TOKEN }}" \
+              -F "file=@trivy.json" \
+              -F "scan_type=Trivy Scan" \
+              -F "product_name=dexter-dummy-predictor" \
+              -F "source_code_management_uri=https://github.com/${{ github.repository }}" \
+              -F "build_id=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+              -F "engagement_name=trivy-scan" \
+              -F "auto_create_context=true" \
+              -F "deduplication_on_engagement=true" \
+              -F "branch_tag=${{ github.sha }}" \
+              -F "tags=laser" \
+              "https://defectdojo-test.dev.evidenceprime.com/api/v2/reimport-scan/")
+
+              if [[ "$RESPONSE_CODE" -ne 201 ]]; then
+                  echo "Error: DefectDojo API returned: $RESPONSE_CODE"
+                  exit 1
+              fi
+          fi
