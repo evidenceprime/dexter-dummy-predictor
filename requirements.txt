@@ -1,7 +1,7 @@
 fastapi==0.115.12
 uvicorn==0.34.2
 pydantic==1.10.22
-spacy==3.8.5
+spacy==3.8.3
 nltk==3.9.1
 pandas==2.2.3
 setuptools==78.1.1
