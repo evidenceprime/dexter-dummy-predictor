@@ -1,4 +1,4 @@
-FROM python:3.13.3-slim-bookworm@sha256:60248ff36cf701fcb6729c085a879d81e4603f7f507345742dc82d4b38d16784
+FROM python:3.11.11-slim-bookworm@sha256:7029b00486ac40bed03e36775b864d3f3d39dcbdf19cd45e6a52d541e6c178f0
 
 RUN apt-get update && apt-get upgrade -y
 RUN pip install --upgrade pip
