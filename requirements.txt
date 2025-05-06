@@ -1,15 +1,15 @@
-fastapi==0.115.8
-uvicorn==0.34.0
-pydantic==1.10.19
+fastapi==0.115.12
+uvicorn==0.34.2
+pydantic==1.10.22
 spacy==3.8.3
 nltk==3.9.1
 pandas==2.2.3
-setuptools==78.1.0
-starlette==0.45.3
+setuptools==78.1.1
+starlette==0.46.2
 en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
 tqdm==4.67.1
 Jinja2==3.1.6
 requests==2.32.3
-certifi==2025.1.31
-pytest==8.3.4
+certifi==2025.4.26
+pytest==8.3.5
 httpx==0.28.1
