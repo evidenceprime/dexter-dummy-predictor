@@ -36,7 +36,7 @@ jobs:
 
       - name: Build for tests
         if: ${{ github.event_name == 'pull_request' }}
-        uses: docker/build-push-action@1dc73863535b631f98b2378be8619f83b136f4a0 # v6
+        uses: docker/build-push-action@263435318d21b8e681c14492fe198d362a7d2c83 # v6
         with:
           push: false
           tags: ${{ env.IMAGE }}:${{ github.sha }}
@@ -49,7 +49,7 @@ jobs:
       - name: Build and push by digest
         if: github.ref == 'refs/heads/master'
         id: build
-        uses: docker/build-push-action@1dc73863535b631f98b2378be8619f83b136f4a0 # v6
+        uses: docker/build-push-action@263435318d21b8e681c14492fe198d362a7d2c83 # v6
         with:
           outputs: type=image,"name=${{ env.IMAGE }}",push-by-digest=true,name-canonical=true,push=true
 
