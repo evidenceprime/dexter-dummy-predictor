@@ -1,7 +1,10 @@
-FROM python:3.11.11-slim-bookworm@sha256:081075da77b2b55c23c088251026fb69a7b2bf92471e491ff5fd75c192fd38e5
+FROM python:3.11.13-slim-bookworm@sha256:5d5490d6fbe69e43359b5d8b1d2714f4a974602e52f7ffa4492e5e269d1ed47c
 
 RUN apt-get update && apt-get upgrade -y
-RUN pip install --upgrade pip
+
+# renovate: datasource=pypi depName=pip
+ENV PIP_VERSION=25.1.1
+RUN pip install pip==${PIP_VERSION}
 
 ARG UID=46012
 ARG USER=predictor
@@ -13,7 +16,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 # Turns off buffering for easier container logging
 ENV PYTHONUNBUFFERED=1
 
-COPY requirements.txt constraints.txt .
+COPY requirements.txt constraints.txt ./
 
 RUN apt-get install -y gcc g++ && \
     PIP_CONSTRAINT=constraints.txt python -m pip install -r requirements.txt &&  \
