@@ -1,9 +1,9 @@
-FROM python:3.11.13-slim-bookworm@sha256:5d5490d6fbe69e43359b5d8b1d2714f4a974602e52f7ffa4492e5e269d1ed47c
+FROM python:3.13.5-slim-bookworm@sha256:4c2cf9917bd1cbacc5e9b07320025bdb7cdf2df7b0ceaccb55e9dd7e30987419
 
 RUN apt-get update && apt-get upgrade -y
 
 # renovate: datasource=pypi depName=pip
-ENV PIP_VERSION=25.1.1
+ENV PIP_VERSION=25.2
 RUN pip install pip==${PIP_VERSION}
 
 ARG UID=46012
