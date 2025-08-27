@@ -12,7 +12,7 @@ jobs:
     steps:
 
       - name: Run Trivy scanner for JSON output
-        uses: aquasecurity/trivy-action@6c175e9c4083a92bbca2f9724c8a5e33bc2d97a5 # 0.30.0
+        uses: aquasecurity/trivy-action@f9424c10c36e288d5fa79bd3dfd1aeb2d6eae808 # 0.33.0
         with:
           image-ref: 'docker.evidenceprime.com/dexter-dummy-predictor:${{ github.sha }}'
           hide-progress: true
