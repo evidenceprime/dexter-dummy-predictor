@@ -1,4 +1,4 @@
-FROM python:3.11.13-slim-bookworm@sha256:838ff46ae6c481e85e369706fa3dea5166953824124735639f3c9f52af85f319
+FROM python:3.11.13-slim-bookworm@sha256:873f91540d53b36327ed4fb018c9669107a4e2a676719720edb4209c4b15d029
 
 RUN apt-get update && apt-get upgrade -y
 
