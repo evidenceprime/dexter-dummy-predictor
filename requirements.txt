@@ -7,7 +7,7 @@ pandas==2.3.2
 setuptools==82.0.0
 starlette==0.50.0
 en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl#sha256=1932429db727d4bff3deed6b34cfc05df17794f4a52eeb26cf8928f7c1a0fb85
-tqdm==4.67.1
+tqdm==4.67.3
 Jinja2==3.1.6
 requests==2.32.5
 certifi==2026.1.4
