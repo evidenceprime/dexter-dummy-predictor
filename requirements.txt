@@ -10,7 +10,7 @@ en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_
 tqdm==4.67.3
 Jinja2==3.1.6
 requests==2.33.1
-certifi==2026.2.25
+certifi==2026.4.22
 pytest==9.0.3
 httpx==0.28.1
 h11==0.16.0
