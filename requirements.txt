@@ -1,4 +1,4 @@
-fastapi==0.137.2
+fastapi==0.141.1
 uvicorn==0.44.0
 pydantic==2.9.0
 spacy==3.8.3
