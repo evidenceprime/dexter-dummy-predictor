@@ -1,4 +1,4 @@
-FROM python:3.11.16-slim-trixie@sha256:9534e5a8e315485d4061ed659af0fd78a284c015f9b73661b41d6bab25604534
+FROM python:3.12.14-slim-trixie@sha256:f77ac9e44ae96ef2c90b8053ea08c31f8be030f824196b0ae4db6d462c84e51f
 
 RUN apt-get update && apt-get upgrade -y
 
@@ -23,6 +23,14 @@ RUN apt-get install -y gcc g++ && \
     apt-get remove -y gcc g++ && \
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/*
+
+# Remove PIP inherited from base image
+RUN rm -rf \
+    /usr/local/lib/python*/site-packages/pip \
+    /usr/local/lib/python*/site-packages/pip-*.dist-info \
+    /usr/local/bin/pip \
+    /usr/local/bin/pip3 \
+    /usr/local/bin/pip3.*
 
 USER $USER
 
