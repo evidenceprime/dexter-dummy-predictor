@@ -24,6 +24,14 @@ RUN apt-get install -y gcc g++ && \
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/*
 
+# Remove PIP inherited from base image
+RUN rm -rf \
+    /usr/local/lib/python*/site-packages/pip \
+    /usr/local/lib/python*/site-packages/pip-*.dist-info \
+    /usr/local/bin/pip \
+    /usr/local/bin/pip3 \
+    /usr/local/bin/pip3.*
+
 USER $USER
 
 WORKDIR /app
