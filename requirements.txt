@@ -14,5 +14,5 @@ certifi==2026.7.22
 pytest==9.1.1
 httpx==0.28.1
 h11==0.16.0
-urllib3==2.7.0
+urllib3==2.8.0
 wheel==0.46.3
