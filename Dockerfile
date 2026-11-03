@@ -3,7 +3,7 @@ FROM python:3.11.16-slim-trixie@sha256:e41613d42d4891e4930f79523f93f81bbc7632584
 RUN apt-get update && apt-get upgrade -y
 
 # renovate: datasource=pypi depName=pip
-ENV PIP_VERSION=26.2.1
+ENV PIP_VERSION=26.3
 RUN pip install pip==${PIP_VERSION}
 
 ARG UID=46012
